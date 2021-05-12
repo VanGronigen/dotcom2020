@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animation | VanGronigen.com</title>
+
+<link href="_css/style.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="shortcut icon" type="image/png" href="_img/favicon.png"/>
+</head>
+
+
+<body>
+
+	<header></header>
+		
+		<main>
+			<section class="container-fluid">
+			<section class="row">
+				<section class="col-sm-3"></section>
+				<header><section class="col-sm-6"><img src="_img/vangronigen.png"></section></header>
+				<section class="col-sm-3 floatright"><a href="nigel.html"><img src="_img/nigel_vangronigen.png"></a></section>
+			</section>
+			<section class="row">
+				<section class="col-sm-1">
+					<section class="nav">
+					<section class="icons">
+						<a href="index.html"><img src="_img/contact.png"><h5 style="color: gold;"><br>CONTACT<br> ME</h5></a>
+						<a href="featured.html"><img src="_img/featured.png"><h5 style="color: deeppink;"><br>SUPPORT<br> ME</h5></a>
+						<a href="portfolio.html"><img src="_img/portfolio.png"><h5 style="color: lightcyan;"><br>BY<br> ME</h5></a>
+					</section>
+					<section class="phone"><img src="_img/phone.png"></section>
+					</section>
+				</section>
+			</section>
+			<section class="row">
+				<section class="col-sm-1"><img src="_img/blank.png"></section>
+				<section class="col-sm-10">
+					
+					
+					<img src="_img/digital_artist.jpg" width="100%" height="100%">
+
+				</section>
+				<section class="col-sm-1"></section>
+			</section>
+			<section class="row">
+				
+				<section class="col-sm-12"><img src="_img/computer_animation.png" width="100%" height="100%"></section>
+				
+			</section>
+			<section class="row bg" style="height: 100%;">
+				<section class="col-sm-2"><a href=""><img src="s_img/blank.png"></a></section>
+				<section class="col-sm-10"><a href=""><img src="_img/portfolio/animation1.png" width="75%"></a></section>
+			</section>
+			<section class="row bg2" style="height: 100%;">
+				<section class="col-sm-2"><a href=""><img src="_img/blank.png"></a></section>
+				<section class="col-sm-10"><a href=""><img src="_img/portfolio/animation2.png" width="75%"></a></section>
+			</section>
+			<section class="row bg" style="height: 100%;">
+				<section class="col-sm-2"><a href=""><img src="s_img/blank.png"></a></section>
+				<section class="col-sm-10"><a href=""><img src="_img/portfolio/animation3.jpg" width="75%"></a></section>
+			</section>
+		</section>
+		</main>
+	
+	<footer class="">
+	<img src="_img/tomorrowtoday.png" height="90%" width="90%">
+	</footer>
+
+
+<!--BUTTON SWITCH FUNCTION -->
+<script>
+	function videoSelect(){
+		
+		var option1="https://www.youtube.com/embed/MXrhNaxsHDY";
+		
+		document.getElementById("switch").src= option1;
+	}
+	function videoSelect2(){
+		
+		var option2="https://www.youtube.com/embed/3ntVlydo0gU";
+		
+		document.getElementById("switch").src= option2;
+	}
+	function videoSelect3(){
+		
+		var option3="https://www.youtube.com/embed/oQ5V3R1JHzw?start=1149";
+		
+		document.getElementById("switch").src= option3;
+	}
+	
+</script>
+
+<!-- IMAGE PRELOADER -->
+<script type="text/javascript">
+	
+	var image = document.images[100]
+	var bigImage = document.createElement("img")
+	
+	bigImage.onload=function(){
+		image.src = this.src
+	}
+	
+	setTimeout(function(){
+		bigImage.src = "tablet.png";
+	}, 50)
+	
+</script>
+
+<!-- BOOTSTRAP STUFF -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

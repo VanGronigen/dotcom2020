@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BootStrap</title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+</head>
+
+<!-- TODO
+SITEWIDE
+Image preloader
+
+
+-->
+
+
+
+
+<body style="background-image: url(desk0.jpg); background-attachment: fixed; background-size: cover">
+
+	<section class="container-fluid">
+		<section class="row">
+			<section class="col-sm-3"><img src="cards.png">BRANDING</section>
+			<section class="col-sm-6"><img src="vangronigen.png"></section>
+			<section class="col-sm-3"><img src="photo.png"></section>
+		</section>
+		<section class="row">
+			<section class="col-sm-1">
+				
+				<section class="icons" style="position:absolute"><img src="contact.png"><br>CONTACT<br> ME<img src="featured.png"><br>SUPPORT<br> ME<img src="portfolio.png"><br>BY<br> ME</section>
+				<section class="phone"><img src="phone.png"></section>
+			</section>
+			<section class="col-sm-1">LAYOUT<a href="http://vangronigen.com"><img src="ruler.png"></a></section>
+			<section class="col-sm-1"><a href="http://google.com"><img src="pencil.png">DESIGN</a></section>
+			<section class="col-sm-6">
+				<section video-container>
+					
+					
+					<iframe id="switch" width="85%" height="65%" src="https://www.youtube.com/embed/43pUNg-BRmw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position: absolute; top:50px; margin:0 5%;"></iframe>
+					
+					<button onClick="videoSelect()"><img src="tablet.png"  style="position: absolute; bottom:20px; left:50px"></button> 
+					<!--
+					<img src="tablet.png"  style="position: absolute; bottom:20px; left:50px">
+					-->
+				<img src="tablet.png"  style="position: absolute; bottom:20px; left:175px">
+				<img src="tablet.png"  style="position: absolute; bottom:20px; left:300px">
+				<img src="tablet.png"  style="position: absolute; bottom:20px; left:425px">
+				
+				</section>
+				<img src="surface.png" width="100%" height="100%">
+				
+			</section>
+			<section class="col-sm-1"><img src="remote.png">ANIMATION</section>
+			<section class="col-sm-2">PHOTOGRAPHY<img src="camera.png"></section>
+			
+		</section>
+		<section class="row">
+			<section class="col-sm-2">BUY TEA<img src="cup.png"></section>
+			<section class="col-sm-1"></section>
+			<section class="col-sm-6"></section>
+			<section class="col-sm-1"></section>
+			<section style="top:-100px" class="col-sm-2">INTERACTIVE<img src="controller.png"></section>
+		</section>
+		<section class="row">
+			<section class="col-sm-2"></section>
+			<section class="col-sm-1"></section>
+			<section class="col-sm-6"></section>
+			<section class="col-sm-1"></section>
+			<section class="col-sm-2"></section>
+		</section>
+		<section class="tomorrowToday">
+			<img src="tomorrowtoday.png">
+		</section>
+	</section>
+	
+<script>
+	function videoSelect(){
+		
+		var option1="https://www.youtube.com/embed/iyafB0VCLsA";
+		
+		document.getElementById("switch").src= option1;
+	}
+</script>
+
+<script type="text/javascript">
+	
+	var image = document.images[100]
+	var bigImage = document.createElement("img")
+	
+	bigImage.onload=function(){
+		image.src = this.src
+	}
+	
+	setTimeout(function(){
+		bigImage.src = "tablet.png";
+	}, 50)
+	
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    <title>Happy Trigger</title>
+    
+    <link rel="stylesheet" href="ht1.css"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+
+
+<body>
+<script>
+// Example:
+
+simplePreload( 'hero.png', 'hero4.png', 'images/promo11.JPG', 'images/promo10.JPG' ); 
+
+function simplePreload()
+
+{ 
+
+  var args = simplePreload.arguments;
+
+  document.imageArray = new Array(args.length);
+
+  for(var i=0; i<args.length; i++)
+
+  {
+
+    document.imageArray[i] = new Image;
+
+    document.imageArray[i].src = args[i];
+
+  }
+}
+</script>
+   
+    <nav> 
+        <div class="imgtext"><a href="shop.html" title="Buy Merchandise"><img src="images/shop.png" alt="shop"><h3>SHOP</h3></a></div>
+        <div class="imgtext"><a href="index.html" title="Home"><img src="images/about.png" alt="about"><h3>ABOUT</h3></a></div>
+        <div class="imgtext"><a href="download.html" title="Get The App"><img src="images/download.png" alt="download"><h3>DOWNLOAD</h3></a></div>
+    </nav>
+
+    <div class="hero img3">
+    
+    <h1>&quot;Happy Trigger&quot;</h1>
+    </div>
+
+    <div class="specialSection">
+    	<div class="desktop-hide"><img src="images/heroMobile.png"></div>
+        <video></video>
+        <h2 class="hide">Level 1: Planet Earth</h2>
+        <img src="images/intro1.png" alt="Where: Everywhere">
+        <p class="hide">Enjoy multiplayer live-action gaming with anyone, anywhere, anytime - All powered by a phone you already own</p>
+    </div>
+
+    <div class="img1"></div>
+    
+    <div class="subSection">
+    <h2 class="hide">Player 1: You</h2>
+    <img src="images/intro2.png" alt="Who: You">
+    <p class="hide">Your gaming experience is based on your performance in real life. Earn a days-worth of exercise while you earn points in the game</p>
+    </div>
+    
+    <div class="img2"></div>
+    
+    <div class="subSection">
+    <h2 class="hide">Day 1: Today</h2>
+    <a href="shop.html" title="shop"><img src="images/intro3.png" alt="When: Today"></a>
+    <p class="hide">You don’t have to wait! 3-player packages are available for order here. Each sale or donation helps build new features and experiences</p>
+    <br>
+    <iframe width="100%" height="640px" src="https://www.youtube.com/embed/HLDQHWos-sk?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="subSection"><a href="http://twitter.com/happytriggerapp" title="twitter"><img src="images/intro4.png" alt="twitter: @HappyTriggerApp"></a></div>
+
+
+</body>
+</html>

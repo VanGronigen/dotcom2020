@@ -1,0 +1,197 @@
+* {
+padding:0;
+margin:0;
+}
+
+/*
+.WhyUShouldHireMe{
+    right: 100%;
+    background: (graphicdesign/experienced.gif);
+    negative: never;
+    perspective: yes;
+    quotes: tomorrow, today;
+    behavior: good++;
+    content: (extraordinary || diverse);
+    flex: 110%;
+    mask:on;
+    mask:off;
+}
+*/
+
+body {
+    display:grid;
+    
+}
+.webpage {
+    display: grid;
+}
+.header1 {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    
+    grid-auto-rows: auto;
+}
+.header2 {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: auto;
+}
+header > h1 {
+    grid-column:2/5;
+}
+
+h1 >img {
+    padding-top:.5rem;
+}
+header > a {
+    grid-row:2/3;
+    background:white;
+    padding: 0 .8rem;
+}
+header > a > img {
+    width:100%;
+}
+
+.window img{
+    width:100%;
+}
+
+.gallery {
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-color: white;
+    
+}
+.gallery img {
+    width:30%;
+    
+}
+.navbar {
+   
+   position: fixed; 
+   z-index: 10;
+   bottom:0px;
+}
+nav {
+    
+    grid-column: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    
+    color:black;
+}
+nav a{
+    /*
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    */
+    
+    
+    justify-self: center;
+    background:white;
+}
+nav a img{
+    padding: auto;
+    margin: auto;
+    width: 64px;
+}
+
+main video {
+
+    position:absolute;
+    z-index:-1;
+    grid-row-start: 1;
+    width: 100%;
+    
+    overflow: hidden;
+
+}
+.panel {
+    position: relative;
+    overflow: hidden;
+}
+
+.hideOnMobile{
+    display:none;
+}
+
+aside {
+    grid-column: 2/4;
+    height:100%;
+    background-image: url('_img/gronigen.png');
+    /*background-size: cover;*/
+    
+    background-repeat: repeat-y;
+}
+aside video{
+    display:none;
+}
+aside img{
+    width:100%;
+    height:auto;
+}
+/*NIGEL PAGE*/
+.helloWorld {
+    height: 400px;
+    overflow-y: auto;
+    background-color: black;
+   
+}
+.helloWorld p {
+    text-align: center;
+    padding-bottom: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color:white;
+
+    margin:3%;
+}
+.helloWorld .left {
+    text-align: left;
+    padding-bottom: 0%;
+}
+
+.desktopLinks {
+    display: none;
+}
+
+
+@media screen and (min-width:767px){
+    body{
+    grid-template-columns: repeat(3, 1fr);
+    }
+    main{
+        width: 500px;
+    }
+    .hideOnMobile{
+        display:block;
+        float:left;
+        
+        max-width:100%;
+        height:100%;
+
+        grid-column-start: 2;
+        
+    }
+    
+    .hideOnMobile img {
+        min-width:500px;
+        max-height: 95vh;
+        width: 95%;
+    }
+
+    aside video {
+        max-height: 80vh;
+        max-width: 90%;
+    }
+    .desktopLinks {
+        display:inline;
+
+    }
+    .mobileLinks{
+        display:none;
+    }
+}
+

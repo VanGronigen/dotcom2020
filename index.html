@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Van_Gronigen</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="_img/logo_favicon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<!--
+  Hello_World!
+  //
+  Thank you for taking a look at my code!
+  Like most websites this site is actively under going constant updates and changes. Please excuse the mess!
+  Please report any bugs you find via email: nigel@vangronigen.com
+  I'm also open to creative feedback. Feel free to suggest any helpful tips you please!
+
+  ~Van_Gronigen, 04/2021
+-->
+
+<body onload="desktopMode()">
+    <main>
+      <header class="header1">
+          <h1><img src="_img/vangronigen.png" width="100%" onload="onLoad()"></h1>
+              <a href="#" onclick="preview('_img/graphic_design.png'); switchTab(0,'_img/design_a.png')"><img id="design" src="_img/design.png" width="64px"></a>
+              <a href="#" onclick="preview('_img/computer_animation.png'); switchTab(1,'_img/animation_a.png')"><img id="animation" src="_img/animation.png" width="64px"></a>
+              <a href="#" onclick="preview('_img/modern_photography.png'); switchTab(2,'_img/photography_a.png')"><img id="photography" src="_img/photography.png" width="64px"></a>
+              <a href="#" onclick="preview('_img/internet_branding.png'); switchTab(3,'_img/branding_a.png')"><img id="branding" src="_img/branding.png" width="64px"></a>
+              <a href="#" onclick="preview('_img/interactive_media.png'); switchTab(4,'_img/interactive_a.png')"><img id="interactive" src="_img/interactive.png" width="64px"></a>
+      </header>
+      
+      
+      <div class="panel">
+        
+        <video id="panelVid" poster="_img/clouds.jpg" autoplay muted loop src="_img/clouds.mp4"></video>
+        <!--<img id="panelImg" src="" width="100%">-->
+      <div class="window">
+        
+        <img id="switch" src="_img/graphic_design.png" width="">
+        
+      </div>
+
+      <section class="design">
+        <div class="bar"></div>
+        <div class="gallery">
+            <img src="_img/portfolio/NataliaMisha.png" onclick="imageSelect('_img/portfolio/NataliaMisha.png')">
+            <img src="_img/portfolio/ArcadeGameAd.jpg" onclick="imageSelect('_img/portfolio/ArcadeGameAd.jpg')">
+            <img src="_img/portfolio/NigelTheHuman.jpg" onclick="imageSelect('_img/portfolio/NigelTheHuman.jpg')">
+            <img src="_img/portfolio/CharlesBernettQuote.png" onclick="imageSelect('_img/portfolio/CharlesBernettQuote.png')">
+            <img src="_img/portfolio/HRUniformPolicy.png" width="100%" onclick="imageSelect('_img/portfolio/HRUniformPolicy.png')">
+          </div>
+      </section>
+      <section class="animation">
+        <div class="bar"></div>
+        <div class="gallery">
+            <img class="desktopLinks" src="_img/portfolio/gendi.gif" onclick="imageSelect('_img/portfolio/gendi.gif')">
+            <img class="desktopLinks" src="_img/portfolio/HappyTrigger.png" onclick="videoSelect('_video/App_Promo.mp4')">
+            <img class="desktopLinks" src="_img/portfolio/LABESTSavingsAccount.png" onclick="videoSelect('_video/Education.mp4')">
+            <img class="mobileLinks" src="_img/portfolio/gendi.gif" onclick="imageSelect('_img/portfolio/gendi.gif')">
+            <a href="_video/App_Promo.mp4"><img class="mobileLinks" src="_img/portfolio/HappyTrigger.png"></a>
+            <a href="_video/Education.mp4"><img class="mobileLinks" src="_img/portfolio/LABESTSavingsAccount.png"></a>
+          </div>
+      </section>
+      <section class="photography">
+        <div class="bar"></div>
+        <div class="gallery">
+            <img src="_img/portfolio/MillionManMarch2015.jpg" width="100%" onclick="imageSelect('_img/portfolio/MillionManMarch2015.jpg')">
+            <img src="_img/portfolio/ObamaHoward2016.png" width="100%" onclick="imageSelect('_img/portfolio/ObamaHoward2016.png')">
+            <img src="_img/portfolio/Moto360.png" width="100%" onclick="imageSelect('_img/portfolio/Moto360.png')">
+            <img src="_img/portfolio/MantisPreying.png" width="100%" onclick="imageSelect('_img/portfolio/MantisPreying.png')">
+          </div>
+      </section>
+      <section class="branding">
+        <div class="bar"></div>
+        <div class="gallery">
+            <img src="_img/portfolio/ErrolClarke.jpg" width="100%" onclick="imageSelect('_img/portfolio/ErrolClarke.jpg')">
+            <img src="_img/portfolio/DrexelUPRSSA.png" width="100%" onclick="imageSelect('_img/portfolio/DrexelUPRSSA.png')">
+            <img src="_img/portfolio/CamelbackMountainArcade.png" onclick="imageSelect('_img/portfolio/CamelbackMountainArcade.png')">
+            <img src="_img/portfolio/SnapchatFilter.gif" height="100%" onclick="imageSelect('_img/portfolio/SnapchatFilter.gif')">
+            <img src="_img/portfolio/ChefYoungGod.jpg" width="100%" onclick="imageSelect('_img/portfolio/ChefYoungGod.jpg')">
+          </div>
+      </section>
+      <section class="interactive">       
+        <div class="bar"></div>
+        <div class="gallery">
+            <a href="https://apps.apple.com/us/app/happy-trigger/id1089036125?ls=1"><img src="_img/portfolio/HappyTriggerApp.PNG" onclick=""></a>
+            <a href="_UX/2019/portfolio.html"><img src="_img/portfolio/nigelvangronigenjr.png" onclick="imageSelect('_img/portfolio/nigelvangronigenjr.png')"></a>
+            <a href="_games/demo.html"><img src="_img/portfolio/theMothr.png" onclick="imageSelect('_img/portfolio/theMother.png')"></a>
+            <a href="_UX/Vantage/index.html"><img src="_img/portfolio/vantage.png" onclick="imageSelect('_img/portfolio/vantage.png')"></a>
+          </div>
+        </div>
+      </section>
+      <nav>
+        
+        <a href="nigel.html"><img src="_img/contact.png" width="150px"></a>
+        <a href="index.html"><img src="_img/index_a.png" width="150px"></a>
+        <a href="shop.html"><img src="_img/shop.png" width="150px"></a>
+        
+      </nav>
+
+    </main>
+    <aside class="hideOnMobile">
+      <video id="bigPreview2" src="" autoplay controls></video>
+      <img id="bigPreview" src="_img/tomorrowtoday.png">
+    </aside>
+
+    <script> 
+        function preview(image){
+          document.getElementById("switch").src=image;
+          document.getElementById("bigPreview").src=image;
+        }
+        /*
+        function desktopMode(){
+          
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            document.getElementById("panelImg").src="_img/clouds.jpg";
+            document.getElementById("panelVid").src="";
+          }
+          else{
+            //window.location.href = "nigel.html";
+            console.log("it's desktop");
+          };
+        }
+        */
+        function imageSelect(img){
+            document.getElementById("bigPreview2").src="";
+            document.getElementById("bigPreview2").style.display="none";
+            document.getElementById("switch").src= img;
+            document.getElementById("bigPreview").src=img;
+            document.getElementById("BigPreview").style.display="block";
+            
+
+        }
+        
+        function videoSelect(vid){
+            
+            document.getElementById("bigPreview2").style.display="block";
+            document.getElementById("bigPreview2").src = vid;
+            document.getElementById("bigPreview").src="";
+        }
+        
+      
+     function switchTab (tabIndex,tabOn){
+       
+        var tabs=document.querySelectorAll("main header a img");
+        var windows=document.querySelectorAll("main section");
+          document.getElementById("bigPreview2").src="";
+          document.getElementById("bigPreview2").style.display="none";
+          document.getElementById('photography').src='_img/photography.png';
+          document.getElementById('branding').src='_img/branding.png';
+          document.getElementById('design').src='_img/design.png';
+          document.getElementById('animation').src='_img/animation.png';
+          document.getElementById('interactive').src='_img/interactive.png';
+
+         tabs[tabIndex].src=tabOn;
+                  
+         windows.forEach(function(node){
+             node.style.display="none";
+         });
+         windows[tabIndex].style.display="block";
+     }
+     switchTab(0,'_img/design_a.png');   
+    </script>
+
+    
+</body>
+
+<!-- 
+  TO FIX
+  Log.txt
+  Fixed position nav bar!
+
+  Preview Image stretching/warping with page width
+  Background not 100% height with certain images
+
+  Better Gerdie gif
+  Better ORDER HERE text*
+  Image Preloader
+
+
+
+
+-->
+</html>

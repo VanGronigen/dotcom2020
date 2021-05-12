@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="_img/logo_favicon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body onload="desktopMode()">
+    <main>
+      <header class="header1">
+          <h1><img src="_img/vangronigen.png" width="100%" onload="onLoad()"></h1>
+          
+              <a href="#" onclick="preview('_img/amafrican_hoodie.png'); switchTab(0,'_img/tops_a.png')"><img id="tops" src="_img/tops_a.png" width="64px"></a>
+              <a href="#"><img id="branding" src="_img/blank.png" width="64px"></a>
+              <a href="#" onclick="preview('_img/amafrican_tshirt.png'); switchTab(2,'_img/shirts_a.png')"><img id="shirts" src="_img/shirts.png" width="64px"></a>
+              <a href="#"><img id="animation" src="_img/blank.png" width="64px"></a>
+              <a href="#" onclick="preview('_img/comingsoon.png'); switchTab(4,'_img/accessories_a.png')"><img id="accessories" src="_img/accessories.png" width="64px"></a>
+      </header>
+      
+      
+      <div class="panel">
+        <video autoplay muted loop src="_img/clouds.mp4"></video>
+      <div class="window">
+        
+        <img id="switch" src="_img/amafrican_hoodie.png" width="100%">
+        
+      </div>
+      
+      <section class="photography">
+        
+        <div class="bar"></div>
+        <div class="gallery">
+            <a href="https://van-gronigen.myshopify.com/collections/frontpage/products/african-american-g-r-hooded-sweatshirt"><img src="_img/order.png" width="100%"></a>
+            <img src="" width="100%" onclick="imageSelect('_img/portfolio/ObamaHoward2016.png')">
+            <img src="" width="100%" onclick="imageSelect('_img/portfolio/Moto360.png')">
+            <img src="" width="100%" onclick="imageSelect('_img/portfolio/MantisPreying.png')">
+          </div>
+      </section>
+      <section class="branding">
+        <div class="bar"></div>
+        <div class="gallery">
+            <img src="_img/portfolio/ErrolClarke.jpg" width="100%">
+            <img src="_img/portfolio/DrexelUPRSSA.png" width="100%" onclick="imageSelect('_img/portfolio/DrexelUPRSSA.png')">
+            <img src="_img/portfolio/CamelbackMountainArcade.png" onclick="imageSelect('_img/portfolio/CamelbackMountainArcade.png')">
+            <img src="_img/portfolio/ChefYoungGod.jpg" onclick="imageSelect('_img/portfolio/ChefYoungGod.jpg')">
+        </div>
+      </section>
+      <section class="design">
+        <div class="bar"></div>
+        <div class="gallery">
+          <a href="https://van-gronigen.myshopify.com/collections/frontpage/products/african-american-g-r-cotton-tee"><img src="_img/order.png"></a>
+            <img src="" onclick="imageSelect('_img/portfolio/ArcadeGameAd.jpg')">
+            <img src="" onclick="imageSelect('_img/portfolio/NigelTheHuman.jpg')">
+            <img src="" onclick="imageSelect('_img/portfolio/CharlesBernettQuote.png')">
+          </div>
+      </section>
+      <section class="animation">
+        <div class="bar"></div>
+        <div class="gallery">
+            <img src="_img/portfolio/AKingWithout.jpg" onclick="videoSelect('_img/portfolio/Education.mp4')">
+            <a href="_img/portfolio/King.gif"><img src="_img/portfolio/HappyTrigger.png" onclick="videoSelect('_img/portfolio/AppFeatures.mp4')"></a>
+            <a href="_img/portfolio/Education.mp4"><img src="_img/portfolio/LABESTSavingsAccount.png" onclick="videoSelect('_img/portfolio/Education.mp4')"></a>
+          </div>
+      </section>
+      <section class="interactive">       
+        <div class="bar"></div>
+        <div class="gallery">
+          <a href="#"><img src="_img/blank.png"></a>
+            <img src="" onclick="imageSelect('')">
+            
+            <img src="" onclick="imageSelect('')">
+          </div>
+        </div>
+      </section>
+      <nav>
+        <a href="nigel.html"><img src="_img/contact.png" width="150px"></a>
+        <a href="index.html"><img src="_img/index.png" width="150px"></a>
+        <a href="shop.html"><img src="_img/shop_a.png" width="150px"></a>
+      </nav>
+
+    </main>
+    <aside class="hideOnMobile">
+      <video id="bigPreview2" src="" autoplay controls></video>
+      <img id="bigPreview" src="_img/africanamerican.jpg">
+    </aside>
+
+    <script> 
+        function preview(image){
+          document.getElementById("switch").src=image;
+          document.getElementById("bigPreview").src=image;
+        }
+        function desktopMode(){
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            console.log("it's mobile")
+          }
+          else{
+            //window.location.href = "nigel.html";
+            console.log("it's desktop");
+          };
+        }
+        
+        function imageSelect(img){
+            document.getElementById("bigPreview2").src="";
+            document.getElementById("bigPreview2").style.display="none";
+            document.getElementById("switch").src= img;
+            document.getElementById("bigPreview").src=img;
+            
+
+        }
+        
+        function videoSelect(vid){
+            document.getElementById("bigPreview2").style.display="block";
+            document.getElementById("bigPreview2").src = vid;
+        }
+        
+      
+     function switchTab (tabIndex,tabOn){
+        var tabs=document.querySelectorAll("main header a img");
+        var windows=document.querySelectorAll("main section");
+
+         document.getElementById('tops').src='_img/tops.png';
+         document.getElementById('branding').src='_img/blank.png';
+         document.getElementById('shirts').src='_img/shirts.png';
+         document.getElementById('animation').src='_img/blank.png';
+         document.getElementById('accessories').src='_img/accessories.png';
+         tabs[tabIndex].src=tabOn;
+                  
+         windows.forEach(function(node){
+             node.style.display="none";
+         });
+         windows[tabIndex].style.display="block";
+     }
+     switchTab(0,'_img/tops_a.png');   
+    </script>
+
+    
+</body>
+</html>

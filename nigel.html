@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nigel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="_img/logo_favicon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <main>
+        <header class="header2">
+            <h1><img src="_img/vangronigen.png" width="100%"></h1>
+          
+              <a href="https://www.thetechstorm.co/"><img id="WishStudios" src="_img/wishstudios.png" width="64px"></a>
+              <a href="#"><img src="_img/blank.png"></a>
+              <a href="happytrigger/index.html"><img id="HappyTrigger" src="_img/Happy_Trigger.png" width="64px"></a>
+              <a href="#"><img src="_img/blank.png"></a>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A3GADJTWYHR8U&source=url"><img id="donate" src="_img/donate.png" width="64px"></a>
+        </header>
+
+        <div class="window helloWorld">
+        <!--
+        <canvas id="ctx" width="390px" height="390px" style="border:1px solid #000000;"></canvas>
+        -->
+        <p style="padding-top:25%">/helloWorld!<br><br>
+            PLEASE SCROLL <br> 
+            <!--OR TILT YOUR DEVICE <br> -->
+            TO RUN DIAGNOSTICS
+        </p>
+        <p class="left"><span>id= "Nigel Van Gronigen, Jr."<br></span</p>
+        <p>is a self-starting technologist, digital designer, and entrepreneur looking to revolutionize the mobile gaming industry and beyond through novel <span style="color:gold;">&amp;impact-oriented</span> thinking<br>... </p>
+        <p>With 10 years experience in graphic design and marketing, this Howard University graduate has a strong educational background in fields ranging from engineering to biology, supported by a naturally <span style="color:magenta;">\critical</span> and <span style="color:magenta;">\creative</span> mind <br>...</p>
+        <p>Nigel founded Happy Trigger, LLC in 2014 and since has dedicated his time and effort into building <span style="color:orange;">groundbreaking_technologies</span> that are as intuitive as they are entertaining, especially interactive games and apps in the fields of photography, augmented reality, and educational sports<br>... </p>
+        <p>Nigel is a self-taught developer who enjoys spending his days outdoors with friends and family and <span style="color:red;">lovesToBuild</span> products that reflect these passions<br>... </p>
+        <p>At the age of 27, Nigel hopes to continue to grow into a successful and philanthropic technocrat with aims to ignite the deep-seated <span style="color:green;">#potential</span> in his generation and <span style="color:green;">#inspire</span> the youth worldwide to do the same.</p>
+        <p style="padding-bottom:45%">#tomorrowToday</p>
+        
+         
+        </div>
+      
+      <section class="photography">
+        
+        <div class="bar"></div>
+        <div class="gallery">
+            <a href="mailto:nigel@vangronigen.com"><img src="_img/mail.png" width="100%"></a>
+            <a href="https://github.com/VanGronigen"><img src="_img/github.png" width="100%"></a>
+            <a href="tel:2015664236"><img src="_img/call.png" width="100%"></a>
+            <a href="https://www.linkedin.com/in/nigelvangronigenjr/"><img src="_img/linkedin.png" width="100%"></a>
+          </div>
+      </section>
+
+      <nav>
+        <a href="nigel.html"><img src="_img/contact_a.png" width="64px"></a>
+        <a href="index.html"><img src="_img/index.png" width="64px"></a>
+        <a href="shop.html"><img src="_img/shop.png" width="64px"></a>
+      </nav>
+
+    </main>
+    <aside class="hideOnMobile">
+        <video id="bigPreview2" src="" autoplay controls></video>
+        <img id="bigPreview" src="_img/tomorrowtoday.png">
+    </aside>
+
+
+    <script> 
+        function imageSelect(img){
+        document.getElementById("switch").src= img;
+
+      }
+      
+     function switchTab (tabIndex,tabOn,hero){
+      var tabs=document.querySelectorAll("main header a img");
+      var windows=document.querySelectorAll("main section");
+
+         document.getElementById('photography').src='_img/photography.png';
+         document.getElementById('branding').src='_img/branding.png';
+         document.getElementById('design').src='_img/design.png';
+         document.getElementById('animation').src='_img/animation.png';
+         document.getElementById('interactive').src='_img/interactive.png';
+         tabs[tabIndex].src=tabOn;
+                  
+         windows.forEach(function(node){
+             node.style.display="none";
+         });
+         windows[tabIndex].style.display="block";
+         document.getElementById('switch').src=hero;
+         
+     }
+     switchTab(0,'_img/photography_a.png',hero);   
+
+    </script>
+
+
+    <script> 
+        var ctx = document.getElementById("ctx").getContext("2d"); 
+        var textx = 200;
+        var texty = 30;
+        ctx.font = '30px Courier';
+
+        var helloWorld = "hiGuisesup";
+
+        ctx.mozImageSmoothingEnabled = false;	
+        ctx.msImageSmoothingEnabled = false;
+        ctx.imageSmoothingEnabled = false;
+
+        
+       setInterval(update,40);
+
+        function update(){
+            ctx.clearRect(0,0,390,390);
+            ctx.fillText(helloWorld,textx,texty);
+            
+
+            document.onclick = function(){
+                texty = texty+50;
+                window.scrollBy(0,100);
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>
